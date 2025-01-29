@@ -9,3 +9,4 @@ class Blogs(Base):
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
 
+
