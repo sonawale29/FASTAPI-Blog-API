@@ -5,7 +5,6 @@ from typing import List
 class Blogs(BaseModel):
     title: str
     content: str
-    user_id: int
 
 
 class BlogsResponse(Blogs):

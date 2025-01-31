@@ -9,7 +9,6 @@ def get_user(db: Session, username: str) -> User | None:
 
 def authenticate_user(db: Session, username: str, password: str) -> User | None:
     user = get_user(db, username)
-
     if not user or not verify_password(password, user.password):
         return None
     return user

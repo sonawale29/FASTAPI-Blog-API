@@ -9,8 +9,10 @@ class User(BaseModel):
     password: str
 
 
-class UserResponse(User):
+class UserResponse(BaseModel):
     id: int = 1
+    username: str
+    email: str
 
     class Config:
         from_attributes = True
